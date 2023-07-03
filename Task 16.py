@@ -3,12 +3,28 @@
 натуральное число N – количество элементов в массиве. В последующих
 строках записаны N целых чисел Ai
 . Последняя строка содержит число X"""
-import random
+# import random
+# from random import randint
+# N = int(input("Введите число элементов массива : "))
+# list_1 = []
+# for i in range(N):
+#     list_1.append(randint(0,10))
+# print(list_1)
+# n = int(input("Введите число из списка количество которых в списке нужно посчитать : "))
+# count_n = 0
+# for i in range(len(list_1)):
+#     if list_1[i] == n :
+#         count_n += 1
+# print(f"Количество чисел {n} в списке : {count_n}")
+# # 2 solution __________________________________________________-
+# n = int(input("Введите число элементов массива : "))
+# lst = [int(input("Введите элементы массива : "))for i in range(n)]
+# x = int(input("Введите число из списка количество которых в списке нужно посчитать : "))
+# print(lst.count(x))
+# 3 solution _________________________________________________
 from random import randint
 N = int(input("Введите число элементов массива : "))
-list_1 = []
-for i in range(N):
-    list_1.append(randint(0,10))
+list_1 = [randint(1, 10) for i in range(N)]
 print(list_1)
 n = int(input("Введите число из списка количество которых в списке нужно посчитать : "))
 count_n = 0
